@@ -17,7 +17,7 @@ public class Pri {
                     continuar = conversor.ConversorDeMoneda.iniciarConversorMoneda();
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null, "Opción no válida");
+                    JOptionPane.showMessageDialog(null, "Opción mmmm no válida");
                     break;
             }
         }
