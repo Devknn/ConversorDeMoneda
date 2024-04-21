@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e448c987-ead1-431f-a602-2678bac9b22b" name="Changes" comment="&quot;llll&quot;" />
+    <list default="true" id="e448c987-ead1-431f-a602-2678bac9b22b" name="Changes" comment="&quot;Cuadro de dialogo actualizado&quot;">
+      <change afterPath="$PROJECT_DIR$/src/ConversorDeMoneda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pri.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/secudaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -17,26 +27,42 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Nreinek/ConvensorDeMoneda.git",
-    "accountId": "134b2d66-14b2-45b5-94bb-6c4432f861ec"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nreinek&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nreinek/ConvensorDeMoneda.git&quot;,
+    &quot;accountId&quot;: &quot;134b2d66-14b2-45b5-94bb-6c4432f861ec&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2fMVSqNLfx7tCA1f8h5uzV3rHfg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.InputUsuario.executor": "Run",
+    "Application.Pri.executor": "Run",
+    "Application.Principal.executor": "Run",
+    "Application.monedas.executor": "Run",
+    "Application.mostrar.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,11 +82,38 @@
       <option name="project" value="LOCAL" />
       <updated>1713611141584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;Actualizacion nueva&quot;">
+      <option name="closed" value="true" />
+      <created>1713611266312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713611266312</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;Actualizacion Principal&quot;">
+      <option name="closed" value="true" />
+      <created>1713611377703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713611377703</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;Cuadro de dialogo actualizado&quot;">
+      <option name="closed" value="true" />
+      <created>1713611796340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713611796340</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;llll&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;llll&quot;" />
+    <MESSAGE value="&quot;Actualizacion nueva&quot;" />
+    <MESSAGE value="&quot;Actualizacion Principal&quot;" />
+    <MESSAGE value="&quot;Cuadro de dialogo actualizado&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Cuadro de dialogo actualizado&quot;" />
   </component>
 </project>
