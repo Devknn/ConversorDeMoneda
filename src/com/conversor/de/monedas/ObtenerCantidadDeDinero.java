@@ -5,6 +5,8 @@ import javax.swing.*;
 public class ObtenerCantidadDeDinero {
     public static double obtenerCantidadDeDinero() {
         double cantidadDeDinero = Double.NaN;
+
+        // con el bucle do puedo iniciar mi bucle por lo menos una vez ante de la condicion
         do {
             String cantidad = JOptionPane.showInputDialog(null,
                     "Ingrese la cantidad de dinero que desea convertir:");
