@@ -1,6 +1,8 @@
+import com.conversor.de.monedas.ConversorDeMoneda;
+
 import javax.swing.JOptionPane;
 
-public class Pri {
+public class Principal {
     public static void main(String[] args) {
         String[] eleccion = {"Conversor de Moneda", "Medidor de temperatura"};
 
@@ -14,9 +16,10 @@ public class Pri {
 
             switch (seleccionarValor) {
                 case "Conversor de Moneda":
-                    continuar = conversor.ConversorDeMoneda.iniciarConversorMoneda();
+                    continuar = ConversorDeMoneda.iniciarConversorMoneda();
                     break;
                 default:
+
                     JOptionPane.showMessageDialog(null, "Opción mmmm no válida");
                     break;
             }

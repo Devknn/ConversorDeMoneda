@@ -1,15 +1,15 @@
-package conversor; // Reemplaza "tu_paquete" con el nombre de tu paquete
+package com.conversor.de.monedas; // Reemplaza "tu_paquete" con el nombre de tu paquete
 
 import javax.swing.JOptionPane;
 
 public class ConversorDeMoneda {
     public static boolean iniciarConversorMoneda() {
-        String[] direcciones = {"De Euro a Otra Moneda", "De Otra Moneda a Euro"};
-        String direccion = (String) JOptionPane.showInputDialog(null,
-                "Seleccione la dirección de la conversión", "Dirección", JOptionPane.PLAIN_MESSAGE,
-                null, direcciones, direcciones[0]);
+        String[] eleccionesMonedas = {"De Euro a Otra Moneda", "De Otra Moneda a Euro"};
+        String elecionMoneda = (String) JOptionPane.showInputDialog(null,
+                "Seleccione la elección de la conversión", "Elección", JOptionPane.PLAIN_MESSAGE,
+                null, eleccionesMonedas, eleccionesMonedas[0]);
 
-        if (direccion == null) {
+        if (elecionMoneda == null) {
             int opcion = JOptionPane.showConfirmDialog(null,
                     "¿Desea volver a seleccionar una opción?", "Continuar",
                     JOptionPane.YES_NO_OPTION);
@@ -18,7 +18,8 @@ public class ConversorDeMoneda {
 
         String[] monedas;
         double[] tasasDeCambio;
-        if (direccion.equals("De Euro a Otra Moneda")) {
+
+        if (elecionMoneda.equals("De Euro a Otra Moneda")) {
             monedas = new String[]{"Dólar", "Bolívares", "Yen", "Pesos", "Soles", "Libras"};
             tasasDeCambio = new double[]{1.0, 0.85, 110620.0, 130.87, 88.49, 0.73}; // Tasas de cambio de Euro a otras monedas
         } else {
@@ -38,19 +39,21 @@ public class ConversorDeMoneda {
                 return opcion == JOptionPane.YES_OPTION;
             }
 
-            double cantidadDeDinero = obtenerCantidadDeDinero();
+            double cantidadDeDinero = ObtenerCantidadDeDinero.obtenerCantidadDeDinero();
 
             if (Double.isNaN(cantidadDeDinero)) {
                 JOptionPane.showMessageDialog(null,
-                        "No se ingresó ningún valor.");
+                        "Cancelando opereración.");
                 continue;
             }
 
             double cantidadConvertida;
-            if (direccion.equals("De Euro a Otra Moneda")) {
-                cantidadConvertida = cantidadDeDinero * tasasDeCambio[indiceMoneda(monedaDestino)];
+
+
+            if (elecionMoneda.equals("De Euro a Otra Moneda")) {
+                cantidadConvertida = cantidadDeDinero * tasasDeCambio[IndiceMoneda.indiceMoneda(monedaDestino)];
             } else {
-                cantidadConvertida = cantidadDeDinero / tasasDeCambio[indiceMoneda(monedaDestino)];
+                cantidadConvertida = cantidadDeDinero / tasasDeCambio[IndiceMoneda.indiceMoneda(monedaDestino)];
             }
 
             JOptionPane.showMessageDialog(null,
@@ -71,33 +74,5 @@ public class ConversorDeMoneda {
         }
     }
 
-    private static int indiceMoneda(String moneda) {
-        String[] monedas = {"Dólar", "Bolívares", "Yen", "Pesos", "Soles", "Libras"};
-        for (int i = 0; i < monedas.length; i++) {
-            if (moneda.equals(monedas[i])) {
-                return i;
-            }
-        }
-        return -1; // Si no se encuentra la moneda
-    }
 
-    private static double obtenerCantidadDeDinero() {
-        double cantidadDeDinero = Double.NaN;
-        do {
-            String cantidad = JOptionPane.showInputDialog(null,
-                    "Ingrese la cantidad de dinero que desea convertir:");
-            if (cantidad == null) {
-                return Double.NaN;
-            }
-            try {
-                cantidadDeDinero = Double.parseDouble(cantidad);
-                if (cantidadDeDinero < 0) {
-                    JOptionPane.showMessageDialog(null, "Por favor, ingrese un número positivo.");
-                }
-            } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Por favor, ingrese un número válido.");
-            }
-        } while (cantidadDeDinero < 0);
-        return cantidadDeDinero;
-    }
 }

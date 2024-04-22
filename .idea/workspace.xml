@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e448c987-ead1-431f-a602-2678bac9b22b" name="Changes" comment="&quot;Cuadro de dialogo actualizado&quot;">
-      <change afterPath="$PROJECT_DIR$/src/ConversorDeMoneda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/secudaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/conversor/de/monedas/IndiceMoneda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/conversor/de/monedas/ObtenerCantidadDeDinero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConversorDeMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/de/monedas/ConversorDeMoneda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -58,8 +60,10 @@
     "Application.monedas.executor": "Run",
     "Application.mostrar.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/reinek/Escritorio/java/screenmatch8/src/com/aluracurso/screenmatch/calculos/CalculadoraDeTiempo.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
