@@ -1,0 +1,5 @@
+from MyPortafolioWeb.Pages.training_inn_gest import innovacion_gestion
+
+from MyPortafolioWeb.Pages.programming_training import programming_training
+
+from MyPortafolioWeb.MyPortafolioWeb import index
